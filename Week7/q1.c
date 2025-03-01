@@ -96,5 +96,6 @@ int main(){
 
   printf("Preorder traversal : \n");
   preOrder(root);
+  printf("\n");
   return 0;
 }
