@@ -28,23 +28,16 @@ int horspool(char src[],char p[])
   
   i = m - 1;
   
-  while(i < n)
-  {
+  while(i < n){
     k = 0;
-    while((k < m) && (p[m-1-k] == src[i-k]))
-      k++;
-    
-    if(k == m)
-      return(i - m + 1);
-    
-    else
-      i += t[src[i]];
+    while((k < m) && (p[m-1-k] == src[i-k]))k++;
+    if(k == m)return(i - m + 1);
+    else i += t[src[i]];
   }
   return -1;
 }
 
-int main()
-{
+int main(){
   char src[100], p[100];
   int pos;
   
